@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".LoginFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="login to your account"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="ENTER YOUR EMAIL"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="ENTER YOUR PASSWORD"
+        android:inputType="textPassword"
+        android:minHeight="48dp"/>
+
+    <TextView
+        android:id="@+id/tforget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:hint="FORGET YOUR PASSWORD"
+        android:minHeight="48dp"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvcreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:text="CREATE A NEW ACCOUNT"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>
+</layout>

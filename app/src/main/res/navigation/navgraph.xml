@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.fregmentnavigation.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_forgetFragment"
+            app:destination="@id/forgetFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_screenFragment"
+            app:destination="@id/screenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.fregmentnavigation.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_phoneFragment"
+            app:destination="@id/phoneFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneFragment"
+        android:name="com.example.fregmentnavigation.PhoneFragment"
+        android:label="fragment_phone"
+        tools:layout="@layout/fragment_phone" >
+        <action
+            android:id="@+id/action_phoneFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.example.fregmentnavigation.OtpFragment"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" >
+        <action
+            android:id="@+id/action_otpFragment_to_screenFragment"
+            app:destination="@id/screenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetFragment"
+        android:name="com.example.fregmentnavigation.ForgetFragment"
+        android:label="fragment_forget"
+        tools:layout="@layout/fragment_forget" >
+        <action
+            android:id="@+id/action_forgetFragment_to_screenFragment"
+            app:destination="@id/screenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenFragment"
+        android:name="com.example.fregmentnavigation.ScreenFragment"
+        android:label="fragment_screen"
+        tools:layout="@layout/fragment_screen"
+        app:popUpToInclusive="true">
+
+    </fragment>
+</navigation>
